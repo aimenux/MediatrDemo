@@ -12,11 +12,11 @@ using Xunit.Abstractions;
 
 namespace MediatrDemo.IntegrationTests;
 
-internal class WebApiTestFixture : WebApplicationFactory<Program>
+internal class IntegrationWebApplicationFactory : WebApplicationFactory<Program>
 {
     private readonly ITestOutputHelper _testOutputHelper;
 
-    public WebApiTestFixture(ITestOutputHelper testOutputHelper)
+    public IntegrationWebApplicationFactory(ITestOutputHelper testOutputHelper)
     {
         _testOutputHelper = testOutputHelper;
     }
@@ -31,7 +31,7 @@ internal class WebApiTestFixture : WebApplicationFactory<Program>
             loggingBuilder.AddProvider(new XUnitLoggerProvider(_testOutputHelper));
         });
 
-        builder.ConfigureAppConfiguration((_, configBuilder) =>
+        builder.ConfigureAppConfiguration((_, _) =>
         {
         });
 

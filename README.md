@@ -8,4 +8,4 @@ Using mediatr to enforce cqrs and loose coupling between components
 In this repo, i m using [mediatr](https://github.com/jbogard/MediatR/wiki) to enforce cqrs and loose coupling between components.
 
 >
-**`Tools`** : net 7.0, web api, mediatr, unit-testing, integration-testing
+**`Tools`** : net 8.0, web api, mediatr, unit-testing, integration-testing

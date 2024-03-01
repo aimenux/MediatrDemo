@@ -19,13 +19,7 @@ public class GetPersonsApiController : PersonsController
     {
         var query = new GetPersonsQuery();
         var queryResponse = await Sender.Send(query, cancellationToken);
-        var apiResponse = new GetPersonsApiResponse(queryResponse
-            .Select(x => new GetPersonApiResponse
-            {
-                Id = x.Id,
-                FullName = x.FullName,
-                Email = x.Email
-            }));
+        var apiResponse = queryResponse.ToApiResponse();
         return Ok(apiResponse);
     }
 }

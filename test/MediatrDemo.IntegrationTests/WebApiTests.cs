@@ -17,7 +17,7 @@ public class WebApiTests
     public async Task Should_Get_Persons_Returns_Ok()
     {
         // arrange
-        var fixture = new WebApiTestFixture(_testOutputHelper);
+        var fixture = new IntegrationWebApplicationFactory(_testOutputHelper);
         var client = fixture.CreateClient();
 
         // act
@@ -33,7 +33,7 @@ public class WebApiTests
     public async Task Should_Get_Person_By_Id_Returns_Ok()
     {
         // arrange
-        var fixture = new WebApiTestFixture(_testOutputHelper);
+        var fixture = new IntegrationWebApplicationFactory(_testOutputHelper);
         var client = fixture.CreateClient();
         var personId = fixture.Persons.First().Id;
 
@@ -52,7 +52,7 @@ public class WebApiTests
     public async Task Should_Get_Person_By_Id_Returns_BadRequest(string personId)
     {
         // arrange
-        var fixture = new WebApiTestFixture(_testOutputHelper);
+        var fixture = new IntegrationWebApplicationFactory(_testOutputHelper);
         var client = fixture.CreateClient();
 
         // act

@@ -1,9 +1,8 @@
 ﻿using MediatrDemo.Application.Exceptions;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace MediatrDemo.Api.Filters;
+namespace MediatrDemo.Api.Presentation.Filters;
 
 public sealed class ApiExceptionFilter : IExceptionFilter
 {

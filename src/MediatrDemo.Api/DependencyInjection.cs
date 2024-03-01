@@ -1,4 +1,4 @@
-﻿using MediatrDemo.Api.Filters;
+﻿using MediatrDemo.Api.Presentation.Filters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 
