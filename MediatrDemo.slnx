@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/files/">
+    <File Path=".editorconfig" />
+    <File Path=".github/workflows/ci.yml" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="global.json" />
+    <File Path="README.md" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MediatrDemo.Api/MediatrDemo.Api.csproj" />
+    <Project Path="src/MediatrDemo.Application/MediatrDemo.Application.csproj" />
+    <Project Path="src/MediatrDemo.Domain/MediatrDemo.Domain.csproj" />
+    <Project Path="src/MediatrDemo.Infrastructure/MediatrDemo.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/MediatrDemo.IntegrationTests/MediatrDemo.IntegrationTests.csproj" />
+    <Project Path="test/MediatrDemo.UnitTests/MediatrDemo.UnitTests.csproj" />
+  </Folder>
+</Solution>
